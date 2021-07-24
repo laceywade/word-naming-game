@@ -1,0 +1,19 @@
+Label,list,Group,word,vowel,clue,phone,soundfile,hint,voice,stimType,Condition
+baseline,A,1,apple,ae,This red fruit grows on trees. ,ae,apple.wav,a _ _ _ e,Southern,WordNamingGame,Southern
+baseline,A,1,bat,ae,"This is a nocturnal mammal with wings, or a tool used to play baseball.",ae,bat.wav,b _ _,Southern,WordNamingGame,Southern
+post,B,1,crab,ae,"Many people eat this sea creature, which is similar to a lobster.",ae,crab.wav,c _ a _,Southern,WordNamingGame,Southern
+post,B,1,crime,ay,"This word refers to any unlawful act. Someone who has robbed a store or committed arson, for example, can be said to have committed one of these.",ay,crime.wav,c _ _ _ _,Southern,WordNamingGame,Southern
+exposure,C,1,time,ay,This is what a clock or watch tells. ,ay,time.wav,t _ _ _,Southern,WordNamingGame,Southern
+exposure,C,1,trash,ae,This is another word for 'garbage.' ,ae,trash.wav,t _ _ _ _,Southern,WordNamingGame,Southern
+post,A,3,apple,ae,This red fruit grows on trees. ,ae,apple.wav,a _ _ _ e,Southern,WordNamingGame,Southern
+post,A,3,bat,ae,"This is a nocturnal mammal with wings, or a tool used to play baseball.",ae,bat.wav,b _ _,Southern,WordNamingGame,Southern
+exposure,B,3,crab,ae,"Many people eat this sea creature, which is similar to a lobster.",ae,crab.wav,c _ a _,Southern,WordNamingGame,Southern
+exposure,B,3,crime,ay,"This word refers to any unlawful act. Someone who has robbed a store or committed arson, for example, can be said to have committed one of these.",ay,crime.wav,c _ _ _ _,Southern,WordNamingGame,Southern
+baseline,C,3,time,ay,This is what a clock or watch tells. ,ay,time.wav,t _ _ _,Southern,WordNamingGame,Southern
+baseline,C,3,trash,ae,This is another word for 'garbage.' ,ae,trash.wav,t _ _ _ _,Southern,WordNamingGame,Southern
+exposure,A,2,apple,ae,This red fruit grows on trees. ,ae,apple.wav,a _ _ _ e,Southern,WordNamingGame,Southern
+exposure,A,2,bat,ae,"This is a nocturnal mammal with wings, or a tool used to play baseball.",ae,bat.wav,b _ _,Southern,WordNamingGame,Southern
+baseline,B,2,crab,ae,"Many people eat this sea creature, which is similar to a lobster.",ae,crab.wav,c _ a _,Southern,WordNamingGame,Southern
+baseline,B,2,crime,ay,"This word refers to any unlawful act. Someone who has robbed a store or committed arson, for example, can be said to have committed one of these.",ay,crime.wav,c _ _ _ _,Southern,WordNamingGame,Southern
+post,C,2,time,ay,This is what a clock or watch tells. ,ay,time.wav,t _ _ _,Southern,WordNamingGame,Southern
+post,C,2,trash,ae,This is another word for 'garbage.' ,ae,trash.wav,t _ _ _ _,Southern,WordNamingGame,Southern
