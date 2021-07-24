@@ -33,7 +33,6 @@ PennController("tone",
 	,
 	getAudio("tone")
     		.stop()
-
 )
 
 
@@ -42,34 +41,31 @@ PennController("recorder",
 	newText("Click the RECORD button to make a sample recording of yourself saying a few words. Click again to stop the recording. Then press PLAY to listen to your recording.")
 		.print()
 	,
-	    newText("blank1", ".")
-      .settings.color("white")
-      .print()
-   ,
+	newText("blank1", ".")
+      		.settings.color("white")
+      		.print()
+   	,
 	newText("Make sure you can hear yourself clearly. Make any adjustments to your position/environment/microphone, then click CONTINUE when you are ready to begin.")
 		.print()
 	,
-newVoiceRecorder("testrecorder")
-.settings.center()
-	.print()
-	.wait()
-
-,
-newButton("Continue")
+	newVoiceRecorder("testrecorder")
+		.settings.center()
+		.print()
+		.wait()
+	,
+	newButton("Continue")
 		.settings.center()
 		.print()
 		// Do not let participant continue until they make a sample recording and listen to it
 		.wait(getMediaRecorder("testrecorder").test.hasPlayed())
-
 )
-
 
 
 PennController("instr1",
     newText("instr1a", "You will be playing a game today. We will try to get you to guess a single word by giving clues. The clues can be very specific but cannot contain the word itself. You will guess the word being described by naming it out loud. To record your response press the 'Record' button. When you are finished, click 'Next' to continue onto the next clue, and your response will be saved automatically.")
      .print()
    ,
-    newText("blank1", ".")
+    newText("blank1", " ")
       .settings.color("white")
       .print()
    ,
@@ -77,14 +73,14 @@ PennController("instr1",
       .settings.bold()     
       .print()
    ,
-        newText("blank2", ".")
+        newText("blank2", " ")
       .settings.color("white")
       .print()
    ,
     newText("instr1d", "For instance, if the clue is 'This is a household pet that often meows', you would respond by saying 'The word is cat.'")     
       .print()
    ,
-    newText("blank3", ".")
+    newText("blank3", " ")
        .settings.color("white")
        .print()
    ,
@@ -102,7 +98,7 @@ row=> PennController("baseline",
 	newVar("TrialN", 0)
 	.settings.global()
 	.set(v => v+1)
-,
+   ,
     newText("instruction", "Record your response out loud by pressing the 'Record' button. Press 'Next' when you are finished. Remember to state your answer in the phrase 'The word is ____.'")   
         .print()
    ,
@@ -126,8 +122,7 @@ row=> PennController("baseline",
     newText("blank3", ".")
           .settings.color("white")
           .print()
-   ,
-       
+   ,   
     newButton("recordbutton", "Record")
          .settings.center()
          .settings.color("white")
@@ -139,11 +134,10 @@ row=> PennController("baseline",
     //Save recording as ParticipantID_Item
     newVoiceRecorder(PennController.GetURLParameter("id")+ "_" +row.word)
         .record()
-,
+    ,
     newText("blank", ".")
             .settings.color("white")
             .print()
-         
    ,
     newButton("next1", "Next")
             .settings.center()
@@ -152,16 +146,13 @@ row=> PennController("baseline",
             .wait()
    ,
 // Wait to stop recorder because participants often press the 'NEXT' button before they are finished responding
-newTimer("delay", 500)
-    .start()
-    .wait()
-,
+   	newTimer("delay", 500)
+		.start()
+		.wait()
+    ,
     getVoiceRecorder(PennController.GetURLParameter("id")+ "_" +row.word)
             .stop()
-            //.settings.log()
-    
     ,
-    
         newTimer("wait", 100)
         .start()
         .wait()
