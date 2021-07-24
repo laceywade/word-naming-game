@@ -2,7 +2,7 @@ PennController.ResetPrefix(null);
 
 PennController.InitiateRecorder("https://my.server/myExperiment/myFile.php").label("initiate")
 
-PennController.DebugOff() 
+//PennController.DebugOff() 
 
 PennController.Sequence("check", "initiate", "tone", "recorder",
  "instr1", randomize("baseline"), 
